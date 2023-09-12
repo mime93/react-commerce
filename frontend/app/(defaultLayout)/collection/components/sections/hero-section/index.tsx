@@ -1,12 +1,13 @@
-import { classNames } from '@helpers/ui-helpers';
+import { markdownToHTML } from '@helpers/markdown-helpers';
+import { classNames } from '@helpers/tailwind-helpers';
 import { isPresent } from '@ifixit/helpers';
-import { ResponsiveImage } from '@ifixit/ui';
 import type { Image } from '@models/components/image';
 import { Wrapper } from 'app/(defaultLayout)/components/wrapper';
+import { ResponsiveImage } from 'app/components/ui/responsive-image';
 import NextImage from 'next/image';
 import * as React from 'react';
-import { usePage } from '../../../hooks/use-page';
-import { DescriptionRichText, HeroDescription } from './hero-description';
+import { forwardRef } from 'react';
+import { CollapsibleDescription } from './collapsible-description';
 
 export interface HeroSectionProps {
    title: string;
@@ -14,6 +15,7 @@ export interface HeroSectionProps {
    description?: string | null;
    backgroundImage?: Image | null;
    brandLogo?: Image | null;
+   productListPage: number;
 }
 
 export function HeroSection({
@@ -22,9 +24,10 @@ export function HeroSection({
    description,
    backgroundImage,
    brandLogo,
+   productListPage,
 }: HeroSectionProps) {
-   const page = usePage();
-   const isFirstPage = page === 1;
+   const isFirstPage = productListPage === 1;
+   const descriptionHtml = markdownToHTML(description ?? '');
    return (
       <section className="my-4 md:my-6">
          <Wrapper>
@@ -58,22 +61,22 @@ export function HeroSection({
                            className="mb-4"
                         />
                      )}
-                     <HeroTitle page={page}>{title}</HeroTitle>
+                     <HeroTitle page={productListPage}>{title}</HeroTitle>
                      {isPresent(tagline) && (
                         <h2 className="font-medium" data-testid="hero-tagline">
                            {tagline}
                         </h2>
                      )}
                      {isPresent(description) && (
-                        <DescriptionRichText mt="4">
-                           {description}
+                        <DescriptionRichText className="mt-4">
+                           {descriptionHtml}
                         </DescriptionRichText>
                      )}
                   </div>
                </div>
             ) : (
                <div className="flex flex-col">
-                  <HeroTitle page={page}>{title}</HeroTitle>
+                  <HeroTitle page={productListPage}>{title}</HeroTitle>
                   {isFirstPage && (
                      <>
                         {isPresent(tagline) && (
@@ -85,7 +88,11 @@ export function HeroSection({
                            </h2>
                         )}
                         {isPresent(description) && (
-                           <HeroDescription>{description}</HeroDescription>
+                           <CollapsibleDescription>
+                              <DescriptionRichText>
+                                 {descriptionHtml}
+                              </DescriptionRichText>
+                           </CollapsibleDescription>
                         )}
                      </>
                   )}
@@ -114,3 +121,25 @@ function HeroTitle({
       </h1>
    );
 }
+
+interface DescriptionRichTextProps {
+   children: string;
+   className?: string;
+}
+
+const DescriptionRichText = forwardRef<
+   HTMLDivElement,
+   DescriptionRichTextProps
+>(({ children, className }, ref) => {
+   return (
+      <div
+         ref={ref}
+         className={classNames(
+            className,
+            'prose',
+            'prose-a:text-brand-500 prose-a:transition-colors prose-a:hover:text-brand-600'
+         )}
+         dangerouslySetInnerHTML={{ __html: children }}
+      />
+   );
+});

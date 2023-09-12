@@ -2,6 +2,7 @@ import { getiFixitOriginFromHost } from '@helpers/path-helpers';
 import ProductListCache from '@pages/api/nextjs/cache/product-list';
 import { headers } from 'next/headers';
 import { notFound } from 'next/navigation';
+import { HeroSection } from './sections/hero-section';
 
 async function getProductList(handle: string) {
    const headerList = headers();
@@ -18,10 +19,12 @@ async function getProductList(handle: string) {
 
 interface ProductListPageProps {
    handle: string;
+   page?: number;
 }
 
 export default async function ProductListPage({
    handle,
+   page = 1,
 }: ProductListPageProps) {
    const productList = await getProductList(handle);
 
@@ -35,7 +38,17 @@ export default async function ProductListPage({
             {productList.sections.map((section) => {
                switch (section.type) {
                   case 'Hero': {
-                     return <div className="text-2xl">Hero section</div>;
+                     return (
+                        <HeroSection
+                           key={section.id}
+                           title={productList.h1 ?? productList.title}
+                           tagline={productList.tagline}
+                           description={productList.description}
+                           backgroundImage={productList.heroImage}
+                           brandLogo={productList.brandLogo}
+                           productListPage={page}
+                        />
+                     );
                   }
                   default: {
                      return null;

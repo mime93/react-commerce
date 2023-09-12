@@ -1,27 +1,19 @@
 'use client';
 
-// import {
-//    Box,
-//    BoxProps,
-//    forwardRef
-// } from '@chakra-ui/react';
-import { classNames, markdownToHTML } from '@helpers/ui-helpers';
-import { useIsMounted } from '@ifixit/ui';
+import { classNames } from '@helpers/tailwind-helpers';
+import { useIsMountedState } from 'app/hooks/lifecycle';
 import * as React from 'react';
-import { forwardRef } from 'react';
 
 const NUMBER_OF_LINES = 5;
 const LINE_HEIGHT = 25;
 const VISIBLE_HEIGHT = NUMBER_OF_LINES * LINE_HEIGHT;
 
-interface HeroDescriptionProps {
-   children: string;
-}
-
-export function HeroDescription({ children }: HeroDescriptionProps) {
+export function CollapsibleDescription({
+   children,
+}: React.PropsWithChildren<{}>) {
    const [isOpen, setIsOpen] = React.useState(false);
    const onToggle = React.useCallback(() => setIsOpen((prev) => !prev), []);
-   const isMounted = useIsMounted();
+   const isMounted = useIsMountedState();
    const textRef = React.useRef<HTMLParagraphElement | null>(null);
    const textHeight = React.useMemo(() => {
       if (isMounted && textRef.current) {
@@ -50,7 +42,7 @@ export function HeroDescription({ children }: HeroDescriptionProps) {
                   : 'max-h-[var(--visible-height)]'
             )}
          >
-            <DescriptionRichText ref={textRef}>{children}</DescriptionRichText>
+            <div ref={textRef}>{children}</div>
          </div>
          {isShowMoreVisible && (
             <button
@@ -65,32 +57,3 @@ export function HeroDescription({ children }: HeroDescriptionProps) {
       </div>
    );
 }
-
-type DescriptionRichTextProps = {
-   children: string;
-   className?: string;
-};
-
-export const DescriptionRichText = forwardRef<
-   HTMLDivElement,
-   DescriptionRichTextProps
->(({ children, className }, ref) => {
-   const html = React.useMemo(() => markdownToHTML(children), [children]);
-
-   return (
-      <div
-         ref={ref}
-         className={classNames(className)}
-         sx={{
-            a: {
-               color: 'brand.500',
-               transition: 'color 300ms',
-               '&:hover': {
-                  color: 'brand.600',
-               },
-            },
-         }}
-         dangerouslySetInnerHTML={{ __html: html }}
-      />
-   );
-});

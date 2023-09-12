@@ -1,4 +1,4 @@
-import { classNames } from '@helpers/ui-helpers';
+import { classNames } from '@helpers/tailwind-helpers';
 
 export type WrapperProps = React.DetailedHTMLProps<
    React.HTMLAttributes<HTMLDivElement>,

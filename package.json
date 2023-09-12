@@ -41,6 +41,7 @@
    "author": "macs",
    "license": "UNLICENSED",
    "devDependencies": {
+      "typescript": "5.1.6",
       "cross-env": "7.0.3",
       "husky": "8.0.1",
       "lint-staged": "13.2.0",
