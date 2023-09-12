@@ -2,7 +2,7 @@ import { trackInMatomoAndGA } from '@ifixit/analytics';
 import { useAppContext } from '@ifixit/app';
 import { useAuthenticatedUser } from '@ifixit/auth-sdk';
 import { assertNever, isError } from '@ifixit/helpers';
-import { useIFixitApiClient } from '@ifixit/ifixit-api-client';
+import { useIFixitApiClient } from '@ifixit/ifixit-api-client/hooks';
 import { useSafeLocalStorage } from '@ifixit/local-storage';
 import { useShopifyStorefrontClient } from '@ifixit/shopify-storefront-client';
 import * as React from 'react';

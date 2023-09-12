@@ -1,6 +1,6 @@
 import { TrackingContext } from '@ifixit/tracking-hooks';
 import { isError } from '@ifixit/helpers';
-import { useIFixitApiClient } from '@ifixit/ifixit-api-client';
+import { useIFixitApiClient } from '@ifixit/ifixit-api-client/hooks';
 import * as React from 'react';
 
 /**

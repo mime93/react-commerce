@@ -1,4 +1,4 @@
-import { useIFixitApiClient } from '@ifixit/ifixit-api-client';
+import { useIFixitApiClient } from '@ifixit/ifixit-api-client/hooks';
 import { useExpiringLocalPreference } from '@ifixit/ui';
 import { getBuyBoxForProduct } from '@lib/ifixit-api/international-buy-box';
 import type { Product } from '@pages/api/nextjs/cache/product';

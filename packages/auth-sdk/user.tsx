@@ -1,4 +1,5 @@
-import { IFixitAPIClient, useIFixitApiClient } from '@ifixit/ifixit-api-client';
+import { IFixitAPIClient } from '@ifixit/ifixit-api-client';
+import { useIFixitApiClient } from '@ifixit/ifixit-api-client/hooks';
 import { useLocalPreference } from '@ifixit/ui';
 import { useQuery } from '@tanstack/react-query';
 import { z } from 'zod';

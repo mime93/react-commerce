@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { faCheckCircle } from '@fortawesome/pro-solid-svg-icons';
 import { FaIcon } from '@ifixit/icons';
-import { useIFixitApiClient } from '@ifixit/ifixit-api-client';
+import { useIFixitApiClient } from '@ifixit/ifixit-api-client/hooks';
 import { useProductTemplateProps } from '@templates/product/hooks/useProductTemplateProps';
 import * as React from 'react';
 

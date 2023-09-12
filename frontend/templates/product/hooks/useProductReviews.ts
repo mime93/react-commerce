@@ -1,4 +1,4 @@
-import { useIFixitApiClient } from '@ifixit/ifixit-api-client';
+import { useIFixitApiClient } from '@ifixit/ifixit-api-client/hooks';
 import { fetchProductReviews } from '@models/product/reviews';
 import type { Product } from '@pages/api/nextjs/cache/product';
 import { useQuery } from '@tanstack/react-query';

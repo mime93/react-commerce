@@ -1,6 +1,6 @@
 import { trackAddToCart } from '@ifixit/analytics';
 import { assertNever, getProductVariantSku } from '@ifixit/helpers';
-import { useIFixitApiClient } from '@ifixit/ifixit-api-client';
+import { useIFixitApiClient } from '@ifixit/ifixit-api-client/hooks';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { Cart, CartLineItem } from '../types';
 import { cartKeys } from '../utils';
