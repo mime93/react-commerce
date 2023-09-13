@@ -5,6 +5,14 @@ export function capitalize(text: string): string {
    return text.slice(0, 1).toUpperCase() + text.slice(1);
 }
 
+export function pluralize(
+   count: number,
+   singular: string,
+   plural: string
+): string {
+   return count === 1 ? singular : plural;
+}
+
 export function keyBy<T extends ObjectLiteral>(
    list: T[],
    keyField: keyof T

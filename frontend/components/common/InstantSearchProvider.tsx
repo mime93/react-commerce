@@ -219,6 +219,7 @@ export function InstantSearchProvider({
          return routeState;
       },
       routeToState(routeState: RouteState) {
+         console.log({ routeState });
          const stateObject: IndexUiState = {};
          if (routeState.q != null) {
             stateObject.query = routeState.q;

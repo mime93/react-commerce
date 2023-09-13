@@ -1,7 +1,7 @@
 'use client';
 
 import { classNames } from '@helpers/tailwind-helpers';
-import { useIsMountedState } from 'app/hooks/lifecycle';
+import { useIsMountedState } from 'app/hooks/use-is-mounted-state';
 import * as React from 'react';
 
 const NUMBER_OF_LINES = 5;

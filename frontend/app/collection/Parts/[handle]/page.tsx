@@ -1,8 +1,5 @@
+import type { ProductListPageSearchParams } from '../../queries/search-products';
 import ProductListPage from '../../components/product-list-page';
-import {
-   ProductListPageSearchParams,
-   getProductListState,
-} from '../../helpers/search-params-helpers';
 
 interface DevicePartsPageProps {
    params: { handle: string };
@@ -13,8 +10,11 @@ export default function DevicePartsPage({
    params,
    searchParams,
 }: DevicePartsPageProps) {
-   const productListState = getProductListState(searchParams);
    return (
-      <ProductListPage handle={params.handle} page={productListState.page} />
+      <ProductListPage
+         type="device-parts"
+         handle={params.handle}
+         searchParams={searchParams}
+      />
    );
 }
