@@ -4,7 +4,7 @@ import {
    Money,
    parseMoney,
 } from '@ifixit/helpers';
-import { useIFixitApiClient } from '@ifixit/ifixit-api-client';
+import { useIFixitApiClient } from '@ifixit/ifixit-api-client/hooks';
 import { useIsMutating, useQuery } from '@tanstack/react-query';
 import {
    APICart,

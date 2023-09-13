@@ -254,6 +254,7 @@ export function InstantSearchProvider({
       },
    };
 
+   // @ts-ignore
    return (
       <InstantSearchSSRProvider {...serverState}>
          <InstantSearch
@@ -272,7 +273,7 @@ export function InstantSearchProvider({
                apiKey={algoliaApiKey}
                prevApiKey={previousApiKey}
             />
-            {children}
+            {children as any}
          </InstantSearch>
       </InstantSearchSSRProvider>
    );

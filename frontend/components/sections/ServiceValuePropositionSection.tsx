@@ -102,6 +102,7 @@ export function BuyBoxPropositionSection({
                   w="5"
                   mr="1.5"
                   color="brand.500"
+                  // @ts-ignore
                   icon={faBadgeDollar}
                />
                Purchase with purpose! Repair makes a global impact, reduces
@@ -114,6 +115,7 @@ export function BuyBoxPropositionSection({
                   w="5"
                   mr="1.5"
                   color="brand.500"
+                  // @ts-ignore
                   icon={faShieldCheck}
                />
                <div>
@@ -129,6 +131,7 @@ export function BuyBoxPropositionSection({
                      w="5"
                      mr="1.5"
                      color="brand.500"
+                     // @ts-ignore
                      icon={faRocket}
                   />
                   Same day shipping if ordered by 1PM Pacific.
