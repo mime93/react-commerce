@@ -16,7 +16,7 @@
       "@ifixit/tracking-hooks": "workspace:*"
    },
    "peerDependencies": {
-      "@chakra-ui/react": ">=2",
+      "@chakra-ui/react": ">=2.8.0",
       "@core-ds/primitives": ">2.4",
       "@emotion/react": ">=11.0.0 <12.0.0",
       "framer-motion": ">=4.0.0 <11.0.0",

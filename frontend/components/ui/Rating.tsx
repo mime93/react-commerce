@@ -18,14 +18,14 @@ export function Rating(props: RatingProps) {
    return (
       <HStack spacing="1" {...rest}>
          {stars.map((i) => {
-            let appearance = RatingStarAppearance.Empty;
+            let appearance = RatingStarVariant.Empty;
             if (halfStarsValue >= i * 2) {
-               appearance = RatingStarAppearance.Full;
+               appearance = RatingStarVariant.Full;
             } else if (halfStarsValue >= i * 2 - 1) {
-               appearance = RatingStarAppearance.Half;
+               appearance = RatingStarVariant.Half;
             }
             return (
-               <RatingStar key={i} size={props.size} appearance={appearance} />
+               <RatingStar key={i} size={props.size} variant={appearance} />
             );
          })}
       </HStack>
@@ -33,33 +33,33 @@ export function Rating(props: RatingProps) {
 }
 
 type RatingStarProps = Omit<FaIconProps, 'icon'> & {
-   appearance: RatingStarAppearance;
+   variant: RatingStarVariant;
    size?: ResponsiveValue<string | number>;
 };
 
-export enum RatingStarAppearance {
+export enum RatingStarVariant {
    Full = 'full',
    Half = 'half',
    Empty = 'empty',
 }
 
 export const RatingStar = ({
-   appearance = RatingStarAppearance.Empty,
+   variant = RatingStarVariant.Empty,
    size = '4',
    ...otherProps
 }: RatingStarProps) => {
-   switch (appearance) {
-      case RatingStarAppearance.Empty: {
+   switch (variant) {
+      case RatingStarVariant.Empty: {
          return (
             <FaIcon icon={faStar} h={size} color="gray.300" {...otherProps} />
          );
       }
-      case RatingStarAppearance.Full: {
+      case RatingStarVariant.Full: {
          return (
             <FaIcon icon={faStar} h={size} color="brand.500" {...otherProps} />
          );
       }
-      case RatingStarAppearance.Half: {
+      case RatingStarVariant.Half: {
          return (
             <FaIcon
                icon={faStarHalf}

@@ -10,7 +10,7 @@
    },
    "peerDependencies": {
       "@babel/core": "7.17.9",
-      "@chakra-ui/react": "2.4.8",
+      "@chakra-ui/react": ">=2.8.0",
       "@emotion/react": "11.10.5",
       "@emotion/styled": "11.10.5",
       "@fortawesome/pro-solid-svg-icons": "6.4.0",
@@ -21,7 +21,6 @@
    },
    "devDependencies": {
       "@babel/core": "7.17.9",
-      "@chakra-ui/react": "2.4.8",
       "@emotion/react": "11.10.5",
       "@emotion/styled": "11.10.5",
       "@fortawesome/pro-solid-svg-icons": "6.4.0",

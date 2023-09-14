@@ -25,7 +25,7 @@
       "playwright:debug": "DEBUG=pw:api playwright test --project=\"Desktop Chrome\" --debug"
    },
    "dependencies": {
-      "@chakra-ui/react": "2.4.8",
+      "@chakra-ui/react": "2.8.0",
       "@core-ds/primitives": "2.5.2",
       "@emotion/react": "11.10.5",
       "@emotion/styled": "11.10.5",
