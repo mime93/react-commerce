@@ -5,12 +5,12 @@
    "types": "./index.tsx",
    "license": "MIT",
    "dependencies": {
-      "@ifixit/ui": "workspace:*",
       "@ifixit/app": "workspace:*",
       "@ifixit/ifixit-api-client": "workspace:*",
       "zod": "3.18.0"
    },
    "peerDependencies": {
+      "@ifixit/ui": "workspace:*",
       "@tanstack/react-query": "4.x",
       "next": "*",
       "cookie": "0.5.0"

@@ -4,8 +4,10 @@
    "main": "./index.tsx",
    "types": "./index.tsx",
    "license": "MIT",
+   "peerDependencies": {
+      "@ifixit/cart-sdk": "workspace:*"
+   },
    "dependencies": {
-      "@ifixit/cart-sdk": "workspace:*",
       "@ifixit/helpers": "workspace:*"
    },
    "devDependencies": {
