@@ -352,9 +352,6 @@ importers:
 
   packages/analytics:
     dependencies:
-      '@ifixit/cart-sdk':
-        specifier: workspace:*
-        version: link:../cart-sdk
       '@ifixit/helpers':
         specifier: workspace:*
         version: link:../helpers

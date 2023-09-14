@@ -1,4 +1,4 @@
-import { AddToCartInput, CartLineItem } from '@ifixit/cart-sdk';
+// import { AddToCartInput, CartLineItem } from '@ifixit/cart-sdk';
 import { gaSendEvent, trackGoogleAddToCart } from './google';
 import { trackMatomoCartChange } from './matomo';
 import { TrackEventMatomo, trackInMatomo } from './matomo/track-event';
@@ -28,8 +28,10 @@ export const trackInMatomoAndGA = (trackData: TrackEventMatomo) => {
 };
 
 export function trackAddToCart(
-   cart: CartLineItem[],
-   addToCartInput: AddToCartInput,
+   // cart: CartLineItem[],
+   // addToCartInput: AddToCartInput,
+   cart: any,
+   addToCartInput: any,
    eventSpecification?: string
 ) {
    if (typeof window === 'undefined') {
@@ -44,7 +46,7 @@ export function trackAddToCart(
          ? addToCartInput.product.itemcode
          : `${addToCartInput.bundle.currentItemCode}/` +
            `${addToCartInput.bundle.items
-              .map((item) => item.itemcode)
+              .map((item: any) => item.itemcode)
               .join(', ')}`;
    trackInMatomoAndGA({
       eventCategory: event,
