@@ -22,10 +22,10 @@
       "@fortawesome/react-fontawesome": "*"
    },
    "devDependencies": {
-      "@types/react": "18.0.24",
-      "@types/react-dom": "18.0.8",
+      "@types/react": "18.2.21",
+      "@types/react-dom": "18.2.7",
+      "typescript": "5.1.6",
       "@ifixit/tsconfig": "workspace:*",
-      "typescript": "4.8.4",
       "react": ">=18.2.0",
       "react-dom": ">=18.2.0",
       "@emotion/react": ">=11.0.0 <12.0.0",

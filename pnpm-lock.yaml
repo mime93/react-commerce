@@ -363,8 +363,8 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/app:
     devDependencies:
@@ -372,17 +372,17 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.0.24
-        version: 18.0.24
+        specifier: 18.2.21
+        version: 18.2.21
       '@types/react-dom':
-        specifier: 18.0.8
-        version: 18.0.8
+        specifier: 18.2.7
+        version: 18.2.7
       react:
         specifier: '>=18.2.0'
         version: 18.2.0
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/auth-sdk:
     dependencies:
@@ -412,14 +412,14 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.0.24
-        version: 18.0.24
+        specifier: 18.2.21
+        version: 18.2.21
       '@types/react-dom':
-        specifier: 18.0.8
-        version: 18.0.8
+        specifier: 18.2.7
+        version: 18.2.7
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/bot:
     dependencies:
@@ -450,10 +450,10 @@ importers:
         version: 17.0.13
       ts-node:
         specifier: 10.9.1
-        version: 10.9.1(@types/node@18.11.5)(typescript@4.8.4)
+        version: 10.9.1(@types/node@18.11.5)(typescript@5.1.6)
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/breadcrumbs:
     dependencies:
@@ -469,13 +469,13 @@ importers:
         version: 7.17.9
       '@chakra-ui/react':
         specifier: 2.4.8
-        version: 2.4.8(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.0.24)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0)
+        version: 2.4.8(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.21)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0)
       '@emotion/react':
         specifier: 11.10.5
-        version: 11.10.5(@babel/core@7.17.9)(@types/react@18.0.24)(react@18.2.0)
+        version: 11.10.5(@babel/core@7.17.9)(@types/react@18.2.21)(react@18.2.0)
       '@emotion/styled':
         specifier: 11.10.5
-        version: 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.0.24)(react@18.2.0)
+        version: 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.2.21)(react@18.2.0)
       '@fortawesome/pro-solid-svg-icons':
         specifier: 6.4.0
         version: 6.4.0
@@ -486,11 +486,11 @@ importers:
         specifier: 4.14.182
         version: 4.14.182
       '@types/react':
-        specifier: 18.0.24
-        version: 18.0.24
+        specifier: 18.2.21
+        version: 18.2.21
       '@types/react-dom':
-        specifier: 18.0.8
-        version: 18.0.8
+        specifier: 18.2.7
+        version: 18.2.7
       framer-motion:
         specifier: '>=4.0.0 <11.0.0'
         version: 10.12.0(react-dom@18.2.0)(react@18.2.0)
@@ -504,8 +504,8 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/cart-sdk:
     dependencies:
@@ -538,20 +538,20 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.0.24
-        version: 18.0.24
+        specifier: 18.2.21
+        version: 18.2.21
       '@types/react-dom':
-        specifier: 18.0.8
-        version: 18.0.8
+        specifier: 18.2.7
+        version: 18.2.7
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/footer:
     dependencies:
       '@chakra-ui/react':
         specifier: '>=2'
-        version: 2.4.8(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.0.24)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0)
+        version: 2.4.8(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.21)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0)
       '@core-ds/primitives':
         specifier: '>2.4'
         version: 2.5.2
@@ -573,10 +573,10 @@ importers:
         version: 7.17.9
       '@emotion/react':
         specifier: '>=11.0.0 <12.0.0'
-        version: 11.10.5(@babel/core@7.17.9)(@types/react@18.0.24)(react@18.2.0)
+        version: 11.10.5(@babel/core@7.17.9)(@types/react@18.2.21)(react@18.2.0)
       '@emotion/styled':
         specifier: '>=11.0.0 <12.0.0'
-        version: 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.0.24)(react@18.2.0)
+        version: 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.2.21)(react@18.2.0)
       '@fortawesome/pro-solid-svg-icons':
         specifier: 6.4.0
         version: 6.4.0
@@ -584,11 +584,11 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.0.24
-        version: 18.0.24
+        specifier: 18.2.21
+        version: 18.2.21
       '@types/react-dom':
-        specifier: 18.0.8
-        version: 18.0.8
+        specifier: 18.2.7
+        version: 18.2.7
       framer-motion:
         specifier: '>=4.0.0 <11.0.0'
         version: 10.12.0(react-dom@18.2.0)(react@18.2.0)
@@ -602,8 +602,8 @@ importers:
         specifier: '*'
         version: 0.9.0
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/helpers:
     devDependencies:
@@ -611,14 +611,14 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/icons:
     dependencies:
       '@chakra-ui/react':
         specifier: '>=2'
-        version: 2.4.8(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.0.24)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0)
+        version: 2.4.8(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.21)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0)
       '@chakra-ui/system':
         specifier: 2.3.0
         version: 2.3.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0)
@@ -634,19 +634,19 @@ importers:
         version: 7.17.9
       '@emotion/react':
         specifier: '>=11.0.0 <12.0.0'
-        version: 11.10.5(@babel/core@7.17.9)(@types/react@18.0.24)(react@18.2.0)
+        version: 11.10.5(@babel/core@7.17.9)(@types/react@18.2.21)(react@18.2.0)
       '@emotion/styled':
         specifier: '>=11.0.0 <12.0.0'
-        version: 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.0.24)(react@18.2.0)
+        version: 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.2.21)(react@18.2.0)
       '@ifixit/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.0.24
-        version: 18.0.24
+        specifier: 18.2.21
+        version: 18.2.21
       '@types/react-dom':
-        specifier: 18.0.8
-        version: 18.0.8
+        specifier: 18.2.7
+        version: 18.2.7
       framer-motion:
         specifier: '>=4.0.0 <11.0.0'
         version: 10.12.0(react-dom@18.2.0)(react@18.2.0)
@@ -657,8 +657,8 @@ importers:
         specifier: '>=18.2.0'
         version: 18.2.0(react@18.2.0)
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/ifixit-api-client:
     dependencies:
@@ -673,17 +673,17 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.0.24
-        version: 18.0.24
+        specifier: 18.2.21
+        version: 18.2.21
       '@types/react-dom':
-        specifier: 18.0.8
-        version: 18.0.8
+        specifier: 18.2.7
+        version: 18.2.7
       react:
         specifier: 18.2.0
         version: 18.2.0
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/local-storage:
     devDependencies:
@@ -691,8 +691,8 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/menu:
     devDependencies:
@@ -700,8 +700,8 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/newsletter-sdk:
     dependencies:
@@ -722,17 +722,17 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.0.24
-        version: 18.0.24
+        specifier: 18.2.21
+        version: 18.2.21
       '@types/react-dom':
-        specifier: 18.0.8
-        version: 18.0.8
+        specifier: 18.2.7
+        version: 18.2.7
       react:
         specifier: 18.2.0
         version: 18.2.0
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/sentry:
     dependencies:
@@ -759,8 +759,8 @@ importers:
         specifier: '>=18.2.0'
         version: 18.2.0(react@18.2.0)
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/shopify-storefront-client:
     devDependencies:
@@ -768,14 +768,14 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.0.24
-        version: 18.0.24
+        specifier: 18.2.21
+        version: 18.2.21
       '@types/react-dom':
-        specifier: 18.0.8
-        version: 18.0.8
+        specifier: 18.2.7
+        version: 18.2.7
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/tracking-hooks:
     devDependencies:
@@ -783,14 +783,14 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.0.24
-        version: 18.0.24
+        specifier: 18.2.21
+        version: 18.2.21
       react:
         specifier: 18.2.0
         version: 18.2.0
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
   packages/tsconfig: {}
 
@@ -798,7 +798,7 @@ importers:
     dependencies:
       '@chakra-ui/react':
         specifier: '>= 2'
-        version: 2.4.8(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.0.24)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0)
+        version: 2.4.8(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.21)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0)
       '@chakra-ui/system':
         specifier: 2.3.0
         version: 2.3.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0)
@@ -835,19 +835,19 @@ importers:
         version: 7.17.9
       '@emotion/react':
         specifier: ^11.10.5
-        version: 11.10.5(@babel/core@7.17.9)(@types/react@18.0.24)(react@18.2.0)
+        version: 11.10.5(@babel/core@7.17.9)(@types/react@18.2.21)(react@18.2.0)
       '@emotion/styled':
         specifier: '>=11.0.0 <12.0.0'
-        version: 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.0.24)(react@18.2.0)
+        version: 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.2.21)(react@18.2.0)
       '@ifixit/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.0.24
-        version: 18.0.24
+        specifier: 18.2.21
+        version: 18.2.21
       '@types/react-dom':
-        specifier: 18.0.8
-        version: 18.0.8
+        specifier: 18.2.7
+        version: 18.2.7
       framer-motion:
         specifier: '>=4.0.0 <11.0.0'
         version: 10.12.0(react-dom@18.2.0)(react@18.2.0)
@@ -861,8 +861,8 @@ importers:
         specifier: '*'
         version: 0.9.0
       typescript:
-        specifier: 4.8.4
-        version: 4.8.4
+        specifier: 5.1.6
+        version: 5.1.6
 
 packages:
 
@@ -4414,7 +4414,7 @@ packages:
       '@emotion/react': '>=10.0.35'
       react: '>=18'
     dependencies:
-      '@emotion/react': 11.10.5(@babel/core@7.17.9)(@types/react@18.0.24)(react@18.2.0)
+      '@emotion/react': 11.10.5(@babel/core@7.17.9)(@types/react@18.2.21)(react@18.2.0)
       react: 18.2.0
 
   /@chakra-ui/descendant@3.0.13(react@18.2.0):
@@ -4450,17 +4450,6 @@ packages:
   /@chakra-ui/event-utils@2.0.8:
     resolution: {integrity: sha512-IGM/yGUHS+8TOQrZGpAKOJl/xGBrmRYJrmbHfUE7zrG3PpQyXvbLDP1M+RggkCFVgHlJi2wpYIf0QtQlU0XZfw==}
 
-  /@chakra-ui/focus-lock@2.0.15(@types/react@18.0.24)(react@18.2.0):
-    resolution: {integrity: sha512-LF8vkaK4W4QTbEycAkh5AAI+upDHZmyBOwxIaS9ZVfi9sgtvu0WzZd6823nZWyEpbXRVXWzx+/L0sXUUogpFWQ==}
-    peerDependencies:
-      react: '>=18'
-    dependencies:
-      '@chakra-ui/dom-utils': 2.0.6
-      react: 18.2.0
-      react-focus-lock: 2.9.4(@types/react@18.0.24)(react@18.2.0)
-    transitivePeerDependencies:
-      - '@types/react'
-
   /@chakra-ui/focus-lock@2.0.15(@types/react@18.2.21)(react@18.2.0):
     resolution: {integrity: sha512-LF8vkaK4W4QTbEycAkh5AAI+upDHZmyBOwxIaS9ZVfi9sgtvu0WzZd6823nZWyEpbXRVXWzx+/L0sXUUogpFWQ==}
     peerDependencies:
@@ -4471,7 +4460,6 @@ packages:
       react-focus-lock: 2.9.4(@types/react@18.2.21)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
-    dev: false
 
   /@chakra-ui/form-control@2.0.16(@chakra-ui/system@2.4.0)(react@18.2.0):
     resolution: {integrity: sha512-Lu6zUiJF9D9I8FNllgC1EvqzBIMTkTp3H84g2PUz/5Xl3Qrd2nVyEwhnJQ9KEkqGB7N9bomPgDdqKv+B7imTiw==}
@@ -4596,31 +4584,6 @@ packages:
       framer-motion: 10.12.0(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
 
-  /@chakra-ui/modal@2.2.8(@chakra-ui/system@2.4.0)(@types/react@18.0.24)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-i2dw79PRKKf3DNqc25bc5jTeSASR+S0mIu39PNSH4VkU6XFR/o3qm3qTMj4HvK1u7ci1sMHMcTwwzfvo81veXg==}
-    peerDependencies:
-      '@chakra-ui/system': '>=2.0.0'
-      framer-motion: '>=4.0.0'
-      react: '>=18'
-      react-dom: '>=18'
-    dependencies:
-      '@chakra-ui/close-button': 2.0.16(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/focus-lock': 2.0.15(@types/react@18.0.24)(react@18.2.0)
-      '@chakra-ui/portal': 2.0.14(react-dom@18.2.0)(react@18.2.0)
-      '@chakra-ui/react-context': 2.0.7(react@18.2.0)
-      '@chakra-ui/react-types': 2.0.7(react@18.2.0)
-      '@chakra-ui/react-use-merge-refs': 2.0.7(react@18.2.0)
-      '@chakra-ui/shared-utils': 2.0.5
-      '@chakra-ui/system': 2.4.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0)
-      '@chakra-ui/transition': 2.0.14(framer-motion@10.12.0)(react@18.2.0)
-      aria-hidden: 1.2.3
-      framer-motion: 10.12.0(react-dom@18.2.0)(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-remove-scroll: 2.5.6(@types/react@18.0.24)(react@18.2.0)
-    transitivePeerDependencies:
-      - '@types/react'
-
   /@chakra-ui/modal@2.2.8(@chakra-ui/system@2.4.0)(@types/react@18.2.21)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-i2dw79PRKKf3DNqc25bc5jTeSASR+S0mIu39PNSH4VkU6XFR/o3qm3qTMj4HvK1u7ci1sMHMcTwwzfvo81veXg==}
     peerDependencies:
@@ -4645,7 +4608,6 @@ packages:
       react-remove-scroll: 2.5.6(@types/react@18.2.21)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
-    dev: false
 
   /@chakra-ui/number-input@2.0.17(@chakra-ui/system@2.4.0)(react@18.2.0):
     resolution: {integrity: sha512-134QRzEr6ia0pIO4C+7pFJ1+Weo+gU3yAHBeYMxfMniYz4qxsmsNHtBhgssvSoKe8dhL3pyuT0dsgbHIfW/3Qg==}
@@ -4755,8 +4717,8 @@ packages:
       '@chakra-ui/react-env': 2.0.13(react@18.2.0)
       '@chakra-ui/system': 2.4.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0)
       '@chakra-ui/utils': 2.0.15
-      '@emotion/react': 11.10.5(@babel/core@7.17.9)(@types/react@18.0.24)(react@18.2.0)
-      '@emotion/styled': 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.0.24)(react@18.2.0)
+      '@emotion/react': 11.10.5(@babel/core@7.17.9)(@types/react@18.2.21)(react@18.2.0)
+      '@emotion/styled': 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.2.21)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -4964,73 +4926,6 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@chakra-ui/react@2.4.8(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.0.24)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-s1iY+u6nUb/OiB6WgcWbBmbCwkmfPfQQ6xJn4Vs7rJAy7FiE8EEm623tHm1k4UdT0h4HJOm0UkQEyjh1kusCkQ==}
-    peerDependencies:
-      '@emotion/react': ^11.0.0
-      '@emotion/styled': ^11.0.0
-      framer-motion: '>=4.0.0'
-      react: '>=18'
-      react-dom: '>=18'
-    dependencies:
-      '@chakra-ui/accordion': 2.1.7(@chakra-ui/system@2.4.0)(framer-motion@10.12.0)(react@18.2.0)
-      '@chakra-ui/alert': 2.0.16(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/avatar': 2.2.3(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/breadcrumb': 2.1.3(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/button': 2.0.15(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/card': 2.1.5(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/checkbox': 2.2.9(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/close-button': 2.0.16(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/control-box': 2.0.13(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/counter': 2.0.13(react@18.2.0)
-      '@chakra-ui/css-reset': 2.0.12(@emotion/react@11.10.5)(react@18.2.0)
-      '@chakra-ui/editable': 2.0.18(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/form-control': 2.0.16(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/hooks': 2.1.5(react@18.2.0)
-      '@chakra-ui/icon': 3.0.16(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/image': 2.0.14(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/input': 2.0.18(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/layout': 2.1.14(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/live-region': 2.0.13(react@18.2.0)
-      '@chakra-ui/media-query': 3.2.10(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/menu': 2.1.7(@chakra-ui/system@2.4.0)(framer-motion@10.12.0)(react@18.2.0)
-      '@chakra-ui/modal': 2.2.8(@chakra-ui/system@2.4.0)(@types/react@18.0.24)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0)
-      '@chakra-ui/number-input': 2.0.17(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/pin-input': 2.0.18(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/popover': 2.1.7(@chakra-ui/system@2.4.0)(framer-motion@10.12.0)(react@18.2.0)
-      '@chakra-ui/popper': 3.0.12(react@18.2.0)
-      '@chakra-ui/portal': 2.0.14(react-dom@18.2.0)(react@18.2.0)
-      '@chakra-ui/progress': 2.1.4(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/provider': 2.0.30(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react-dom@18.2.0)(react@18.2.0)
-      '@chakra-ui/radio': 2.0.18(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/react-env': 2.0.13(react@18.2.0)
-      '@chakra-ui/select': 2.0.17(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/skeleton': 2.0.22(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/slider': 2.0.19(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/spinner': 2.0.13(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/stat': 2.0.16(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/styled-system': 2.5.2
-      '@chakra-ui/switch': 2.0.21(@chakra-ui/system@2.4.0)(framer-motion@10.12.0)(react@18.2.0)
-      '@chakra-ui/system': 2.4.0(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0)
-      '@chakra-ui/table': 2.0.15(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/tabs': 2.1.7(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/tag': 2.0.16(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/textarea': 2.0.17(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@chakra-ui/theme': 2.2.5(@chakra-ui/styled-system@2.5.2)
-      '@chakra-ui/theme-utils': 2.0.9
-      '@chakra-ui/toast': 5.0.0(@chakra-ui/system@2.4.0)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0)
-      '@chakra-ui/tooltip': 2.2.5(@chakra-ui/system@2.4.0)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0)
-      '@chakra-ui/transition': 2.0.14(framer-motion@10.12.0)(react@18.2.0)
-      '@chakra-ui/utils': 2.0.15
-      '@chakra-ui/visually-hidden': 2.0.15(@chakra-ui/system@2.4.0)(react@18.2.0)
-      '@emotion/react': 11.10.5(@babel/core@7.17.9)(@types/react@18.0.24)(react@18.2.0)
-      '@emotion/styled': 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.0.24)(react@18.2.0)
-      framer-motion: 10.12.0(react-dom@18.2.0)(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    transitivePeerDependencies:
-      - '@types/react'
-
   /@chakra-ui/react@2.4.8(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(@types/react@18.2.21)(framer-motion@10.12.0)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-s1iY+u6nUb/OiB6WgcWbBmbCwkmfPfQQ6xJn4Vs7rJAy7FiE8EEm623tHm1k4UdT0h4HJOm0UkQEyjh1kusCkQ==}
     peerDependencies:
@@ -5097,7 +4992,6 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
-    dev: false
 
   /@chakra-ui/select@2.0.17(@chakra-ui/system@2.4.0)(react@18.2.0):
     resolution: {integrity: sha512-wH+Vxsl7Y/qjoGmRWEcRQuoH0tQwRwHS+1wWH4Ht+xfZkQwijoUxLUNoWfXo3B/mEvq5Y//YdRFZ2LCGxihJng==}
@@ -5205,8 +5099,8 @@ packages:
       '@chakra-ui/styled-system': 2.3.4
       '@chakra-ui/theme-utils': 2.0.1
       '@chakra-ui/utils': 2.0.11
-      '@emotion/react': 11.10.5(@babel/core@7.17.9)(@types/react@18.0.24)(react@18.2.0)
-      '@emotion/styled': 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.0.24)(react@18.2.0)
+      '@emotion/react': 11.10.5(@babel/core@7.17.9)(@types/react@18.2.21)(react@18.2.0)
+      '@emotion/styled': 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.2.21)(react@18.2.0)
       react: 18.2.0
       react-fast-compare: 3.2.0
     dev: false
@@ -5224,8 +5118,8 @@ packages:
       '@chakra-ui/styled-system': 2.5.2
       '@chakra-ui/theme-utils': 2.0.9
       '@chakra-ui/utils': 2.0.15
-      '@emotion/react': 11.10.5(@babel/core@7.17.9)(@types/react@18.0.24)(react@18.2.0)
-      '@emotion/styled': 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.0.24)(react@18.2.0)
+      '@emotion/react': 11.10.5(@babel/core@7.17.9)(@types/react@18.2.21)(react@18.2.0)
+      '@emotion/styled': 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.2.21)(react@18.2.0)
       react: 18.2.0
       react-fast-compare: 3.2.0
 
@@ -5487,30 +5381,6 @@ packages:
   /@emotion/memoize@0.8.1:
     resolution: {integrity: sha512-W2P2c/VRW1/1tLox0mVUalvnWXxavmv/Oum2aPsRcoDJuob75FC3Y8FbpfLwUegRcxINtGUMPq0tFCvYNTBXNA==}
 
-  /@emotion/react@11.10.5(@babel/core@7.17.9)(@types/react@18.0.24)(react@18.2.0):
-    resolution: {integrity: sha512-TZs6235tCJ/7iF6/rvTaOH4oxQg2gMAcdHemjwLKIjKz4rRuYe1HJ2TQJKnAcRAfOUDdU8XoDadCe1rl72iv8A==}
-    peerDependencies:
-      '@babel/core': ^7.0.0
-      '@types/react': '*'
-      react: '>=16.8.0'
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-      '@types/react':
-        optional: true
-    dependencies:
-      '@babel/core': 7.17.9
-      '@babel/runtime': 7.22.3
-      '@emotion/babel-plugin': 11.11.0
-      '@emotion/cache': 11.11.0
-      '@emotion/serialize': 1.1.2
-      '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@18.2.0)
-      '@emotion/utils': 1.2.1
-      '@emotion/weak-memoize': 0.3.1
-      '@types/react': 18.0.24
-      hoist-non-react-statics: 3.3.2
-      react: 18.2.0
-
   /@emotion/react@11.10.5(@babel/core@7.17.9)(@types/react@18.2.21)(react@18.2.0):
     resolution: {integrity: sha512-TZs6235tCJ/7iF6/rvTaOH4oxQg2gMAcdHemjwLKIjKz4rRuYe1HJ2TQJKnAcRAfOUDdU8XoDadCe1rl72iv8A==}
     peerDependencies:
@@ -5534,7 +5404,6 @@ packages:
       '@types/react': 18.2.21
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
-    dev: false
 
   /@emotion/serialize@1.1.2:
     resolution: {integrity: sha512-zR6a/fkFP4EAcCMQtLOhIgpprZOwNmCldtpaISpvz348+DP4Mz8ZoKaGGCQpbzepNIUWbq4w6hNZkwDyKoS+HA==}
@@ -5547,30 +5416,6 @@ packages:
 
   /@emotion/sheet@1.2.2:
     resolution: {integrity: sha512-0QBtGvaqtWi+nx6doRwDdBIzhNdZrXUppvTM4dtZZWEGTXL/XE/yJxLMGlDT1Gt+UHH5IX1n+jkXyytE/av7OA==}
-
-  /@emotion/styled@11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.0.24)(react@18.2.0):
-    resolution: {integrity: sha512-8EP6dD7dMkdku2foLoruPCNkRevzdcBaY6q0l0OsbyJK+x8D9HWjX27ARiSIKNF634hY9Zdoedh8bJCiva8yZw==}
-    peerDependencies:
-      '@babel/core': ^7.0.0
-      '@emotion/react': ^11.0.0-rc.0
-      '@types/react': '*'
-      react: '>=16.8.0'
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-      '@types/react':
-        optional: true
-    dependencies:
-      '@babel/core': 7.17.9
-      '@babel/runtime': 7.22.3
-      '@emotion/babel-plugin': 11.11.0
-      '@emotion/is-prop-valid': 1.2.1
-      '@emotion/react': 11.10.5(@babel/core@7.17.9)(@types/react@18.0.24)(react@18.2.0)
-      '@emotion/serialize': 1.1.2
-      '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@18.2.0)
-      '@emotion/utils': 1.2.1
-      '@types/react': 18.0.24
-      react: 18.2.0
 
   /@emotion/styled@11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.2.21)(react@18.2.0):
     resolution: {integrity: sha512-8EP6dD7dMkdku2foLoruPCNkRevzdcBaY6q0l0OsbyJK+x8D9HWjX27ARiSIKNF634hY9Zdoedh8bJCiva8yZw==}
@@ -5595,7 +5440,6 @@ packages:
       '@emotion/utils': 1.2.1
       '@types/react': 18.2.21
       react: 18.2.0
-    dev: false
 
   /@emotion/unitless@0.8.1:
     resolution: {integrity: sha512-KOEGMu6dmJZtpadb476IsZBclKvILjopjUii3V+7MnXIQCYh8W3NgNcgwo21n9LXZX6EDIKvqfjYxXebDwxKmQ==}
@@ -8218,12 +8062,6 @@ packages:
     resolution: {integrity: sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==}
     dev: false
 
-  /@types/react-dom@18.0.8:
-    resolution: {integrity: sha512-C3GYO0HLaOkk9dDAz3Dl4sbe4AKUGTCfFIZsz3n/82dPNN8Du533HzKatDxeUYWu24wJgMP1xICqkWk1YOLOIw==}
-    dependencies:
-      '@types/react': 18.0.24
-    dev: true
-
   /@types/react-dom@18.2.7:
     resolution: {integrity: sha512-GRaAEriuT4zp9N4p1i8BDBYmEyfo+xQ3yHjJU4eiK5NDa1RmUZG+unZABUTK4/Ox/M+GaHwb6Ow8rUITrtjszA==}
     dependencies:
@@ -8241,13 +8079,6 @@ packages:
     dependencies:
       '@types/react': 18.2.21
     dev: true
-
-  /@types/react@18.0.24:
-    resolution: {integrity: sha512-wRJWT6ouziGUy+9uX0aW4YOJxAY0bG6/AOk5AW5QSvZqI7dk6VBIbXvcVgIw/W5Jrl24f77df98GEKTJGOLx7Q==}
-    dependencies:
-      '@types/prop-types': 15.7.5
-      '@types/scheduler': 0.16.3
-      csstype: 3.1.2
 
   /@types/react@18.2.21:
     resolution: {integrity: sha512-neFKG/sBAwGxHgXiIxnbm3/AAVQ/cMRS93hvBpg8xYRbeQSPVABp9U2bRnPf0iI4+Ucdv3plSxKK+3CW2ENJxA==}
@@ -15151,24 +14982,6 @@ packages:
   /react-fast-compare@3.2.0:
     resolution: {integrity: sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==}
 
-  /react-focus-lock@2.9.4(@types/react@18.0.24)(react@18.2.0):
-    resolution: {integrity: sha512-7pEdXyMseqm3kVjhdVH18sovparAzLg5h6WvIx7/Ck3ekjhrrDMEegHSa3swwC8wgfdd7DIdUVRGeiHT9/7Sgg==}
-    peerDependencies:
-      '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@babel/runtime': 7.22.3
-      '@types/react': 18.0.24
-      focus-lock: 0.11.6
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-clientside-effect: 1.2.6(react@18.2.0)
-      use-callback-ref: 1.3.0(@types/react@18.0.24)(react@18.2.0)
-      use-sidecar: 1.1.2(@types/react@18.0.24)(react@18.2.0)
-
   /react-focus-lock@2.9.4(@types/react@18.2.21)(react@18.2.0):
     resolution: {integrity: sha512-7pEdXyMseqm3kVjhdVH18sovparAzLg5h6WvIx7/Ck3ekjhrrDMEegHSa3swwC8wgfdd7DIdUVRGeiHT9/7Sgg==}
     peerDependencies:
@@ -15186,7 +14999,6 @@ packages:
       react-clientside-effect: 1.2.6(react@18.2.0)
       use-callback-ref: 1.3.0(@types/react@18.2.21)(react@18.2.0)
       use-sidecar: 1.1.2(@types/react@18.2.21)(react@18.2.0)
-    dev: false
 
   /react-instantsearch-core@7.0.2(algoliasearch@4.13.1)(react@18.2.0):
     resolution: {integrity: sha512-g1yDcEiKTKs6U8VbiqmM0tcBLWvi7lPLIWgOSGfWe5hqh62Z8U0WEhtdQwVxiNf5W0I1DGxWzgBJ/V8m9MBtaA==}
@@ -15251,21 +15063,6 @@ packages:
     dev: false
     patched: true
 
-  /react-remove-scroll-bar@2.3.4(@types/react@18.0.24)(react@18.2.0):
-    resolution: {integrity: sha512-63C4YQBUt0m6ALadE9XV56hV8BgJWDmmTPY758iIJjfQKt2nYwoUrPk0LXRXcB/yIj82T1/Ixfdpdk68LwIB0A==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@types/react': 18.0.24
-      react: 18.2.0
-      react-style-singleton: 2.2.1(@types/react@18.0.24)(react@18.2.0)
-      tslib: 2.5.2
-
   /react-remove-scroll-bar@2.3.4(@types/react@18.2.21)(react@18.2.0):
     resolution: {integrity: sha512-63C4YQBUt0m6ALadE9XV56hV8BgJWDmmTPY758iIJjfQKt2nYwoUrPk0LXRXcB/yIj82T1/Ixfdpdk68LwIB0A==}
     engines: {node: '>=10'}
@@ -15280,25 +15077,6 @@ packages:
       react: 18.2.0
       react-style-singleton: 2.2.1(@types/react@18.2.21)(react@18.2.0)
       tslib: 2.5.2
-    dev: false
-
-  /react-remove-scroll@2.5.6(@types/react@18.0.24)(react@18.2.0):
-    resolution: {integrity: sha512-bO856ad1uDYLefgArk559IzUNeQ6SWH4QnrevIUjH+GczV56giDfl3h0Idptf2oIKxQmd1p9BN25jleKodTALg==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@types/react': 18.0.24
-      react: 18.2.0
-      react-remove-scroll-bar: 2.3.4(@types/react@18.0.24)(react@18.2.0)
-      react-style-singleton: 2.2.1(@types/react@18.0.24)(react@18.2.0)
-      tslib: 2.5.2
-      use-callback-ref: 1.3.0(@types/react@18.0.24)(react@18.2.0)
-      use-sidecar: 1.1.2(@types/react@18.0.24)(react@18.2.0)
 
   /react-remove-scroll@2.5.6(@types/react@18.2.21)(react@18.2.0):
     resolution: {integrity: sha512-bO856ad1uDYLefgArk559IzUNeQ6SWH4QnrevIUjH+GczV56giDfl3h0Idptf2oIKxQmd1p9BN25jleKodTALg==}
@@ -15317,7 +15095,6 @@ packages:
       tslib: 2.5.2
       use-callback-ref: 1.3.0(@types/react@18.2.21)(react@18.2.0)
       use-sidecar: 1.1.2(@types/react@18.2.21)(react@18.2.0)
-    dev: false
 
   /react-schemaorg@2.0.0(react@18.2.0)(schema-dts@1.1.0)(typescript@5.1.6):
     resolution: {integrity: sha512-UqciFKA203ewNjn0zC09uYKuJSvMD8L75L1s/cW4rc7cS64w8l7vaI3SYkuoI/nwCBkJRmOkSJedWDUZBlYZwg==}
@@ -15331,22 +15108,6 @@ packages:
       schema-dts: 1.1.0(typescript@5.1.6)
       typescript: 5.1.6
     dev: false
-
-  /react-style-singleton@2.2.1(@types/react@18.0.24)(react@18.2.0):
-    resolution: {integrity: sha512-ZWj0fHEMyWkHzKYUr2Bs/4zU6XLmq9HsgBURm7g5pAVfyn49DgUiNgY2d4lXRlYSiCif9YBGpQleewkcqddc7g==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@types/react': 18.0.24
-      get-nonce: 1.0.1
-      invariant: 2.2.4
-      react: 18.2.0
-      tslib: 2.5.2
 
   /react-style-singleton@2.2.1(@types/react@18.2.21)(react@18.2.0):
     resolution: {integrity: sha512-ZWj0fHEMyWkHzKYUr2Bs/4zU6XLmq9HsgBURm7g5pAVfyn49DgUiNgY2d4lXRlYSiCif9YBGpQleewkcqddc7g==}
@@ -15363,7 +15124,6 @@ packages:
       invariant: 2.2.4
       react: 18.2.0
       tslib: 2.5.2
-    dev: false
 
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
@@ -16697,7 +16457,7 @@ packages:
     resolution: {integrity: sha512-PGcnJoTBnVGy6yYNFxWVNkdcAuAMstvutN9MgDJIV6L0oG8fB+ZNNy1T+wJzah8RPGor1mZuPQkVfXNDpy9eHA==}
     dev: true
 
-  /ts-node@10.9.1(@types/node@18.11.5)(typescript@4.8.4):
+  /ts-node@10.9.1(@types/node@18.11.5)(typescript@5.1.6):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -16723,7 +16483,7 @@ packages:
       create-require: 1.1.1
       diff: 4.0.2
       make-error: 1.3.6
-      typescript: 4.8.4
+      typescript: 5.1.6
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
     dev: true
@@ -16829,12 +16589,6 @@ packages:
       call-bind: 1.0.2
       for-each: 0.3.3
       is-typed-array: 1.1.10
-    dev: true
-
-  /typescript@4.8.4:
-    resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
-    engines: {node: '>=4.2.0'}
-    hasBin: true
     dev: true
 
   /typescript@5.1.6:
@@ -16986,20 +16740,6 @@ packages:
     resolution: {integrity: sha512-WHN8KDQblxd32odxeIgo83rdVDE2bvdkb86it7bMhYZwWKJz0+O0RK/eZiHYnM+zgt/U7hAHOlCQGfjjvSkw2g==}
     dev: true
 
-  /use-callback-ref@1.3.0(@types/react@18.0.24)(react@18.2.0):
-    resolution: {integrity: sha512-3FT9PRuRdbB9HfXhEq35u4oZkvpJ5kuYbpqhCfmiZyReuRgpnhDlbr2ZEnnuS0RrJAPn6l23xjFg9kpDM+Ms7w==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@types/react': 18.0.24
-      react: 18.2.0
-      tslib: 2.5.2
-
   /use-callback-ref@1.3.0(@types/react@18.2.21)(react@18.2.0):
     resolution: {integrity: sha512-3FT9PRuRdbB9HfXhEq35u4oZkvpJ5kuYbpqhCfmiZyReuRgpnhDlbr2ZEnnuS0RrJAPn6l23xjFg9kpDM+Ms7w==}
     engines: {node: '>=10'}
@@ -17013,7 +16753,6 @@ packages:
       '@types/react': 18.2.21
       react: 18.2.0
       tslib: 2.5.2
-    dev: false
 
   /use-query-params@2.2.1(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-i6alcyLB8w9i3ZK3caNftdb+UnbfBRNPDnc89CNQWkGRmDrm/gfydHvMBfVsQJRq3NoHOM2dt/ceBWG2397v1Q==}
@@ -17033,21 +16772,6 @@ packages:
       serialize-query-params: 2.0.2
     dev: true
 
-  /use-sidecar@1.1.2(@types/react@18.0.24)(react@18.2.0):
-    resolution: {integrity: sha512-epTbsLuzZ7lPClpz2TyryBfztm7m+28DlEv2ZCQ3MDr5ssiwyOwGH/e5F9CkfWjJ1t4clvI58yF822/GUkjjhw==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      '@types/react': ^16.9.0 || ^17.0.0 || ^18.0.0
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@types/react': 18.0.24
-      detect-node-es: 1.1.0
-      react: 18.2.0
-      tslib: 2.5.2
-
   /use-sidecar@1.1.2(@types/react@18.2.21)(react@18.2.0):
     resolution: {integrity: sha512-epTbsLuzZ7lPClpz2TyryBfztm7m+28DlEv2ZCQ3MDr5ssiwyOwGH/e5F9CkfWjJ1t4clvI58yF822/GUkjjhw==}
     engines: {node: '>=10'}
@@ -17062,7 +16786,6 @@ packages:
       detect-node-es: 1.1.0
       react: 18.2.0
       tslib: 2.5.2
-    dev: false
 
   /use-sync-external-store@1.2.0(react@18.2.0):
     resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
