@@ -44,6 +44,7 @@
       "cross-env": "7.0.3",
       "husky": "8.0.1",
       "lint-staged": "13.2.0",
+      "npm-package-json-lint": "7.0.0",
       "npm-run-all": "4.1.5",
       "prettier": "2.7.1",
       "wait-on": "6.0.0"
@@ -53,7 +54,37 @@
          "react-lite-yt-embed@1.2.7": "patches/react-lite-yt-embed@1.2.7.patch"
       }
    },
+   "npmpackagejsonlint": {
+      "rules": {
+         "prefer-absolute-version-dependencies": [
+            "error",
+            {
+               "exceptions": [
+                  "@ifixit/analytics",
+                  "@ifixit/app",
+                  "@ifixit/auth-sdk",
+                  "@ifixit/bot",
+                  "@ifixit/breadcrumbs",
+                  "@ifixit/cart-sdk",
+                  "@ifixit/footer",
+                  "@ifixit/helpers",
+                  "@ifixit/icons",
+                  "@ifixit/ifixit-api-client",
+                  "@ifixit/local-storage",
+                  "@ifixit/menu",
+                  "@ifixit/newsletter-sdk",
+                  "@ifixit/sentry",
+                  "@ifixit/shopify-storefront-client",
+                  "@ifixit/tracking-hooks",
+                  "@ifixit/tsconfig",
+                  "@ifixit/ui"
+               ]
+            }
+         ]
+      }
+   },
    "lint-staged": {
-      "*": "prettier --write --ignore-unknown"
+      "*": "prettier --write --ignore-unknown",
+      "package.json": "pnpm npmPkgJsonLint"
    }
 }
