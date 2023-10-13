@@ -16,10 +16,14 @@ export function trackPiwikPageView(url: string) {
 }
 
 export function trackPiwikPreferredStore(piwikEnv: string | undefined): void {
-   const dimensionId = getPiwikCustomDimensionsForEnv(piwikEnv);
-   if (typeof window !== 'undefined' && dimensionId) {
+   const customDimensions = getPiwikCustomDimensionsForEnv(piwikEnv);
+   if (typeof window !== 'undefined' && customDimensions) {
       const host = getShopifyStoreDomainFromCurrentURL();
-      piwikPush(['setCustomDimension', dimensionId, host]);
+      piwikPush([
+         'setCustomDimension',
+         customDimensions['preferredStore'],
+         host,
+      ]);
    }
 }
 
