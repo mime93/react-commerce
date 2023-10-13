@@ -40,3 +40,46 @@ export function getShopifyStoreDomainFromCurrentURL(): string | null {
    }
    return null;
 }
+
+export function getShopifyLanguageFromCurrentURL(): string | null {
+   if (typeof window === 'undefined') return null;
+   const host = window.location.hostname;
+   switch (host) {
+      case 'www.ifixit.com':
+         return 'EN';
+      case 'australia.ifixit.com':
+         return 'EN';
+      case 'canada.ifixit.com':
+         return 'EN';
+      case 'store.ifixit.de':
+         return 'DE';
+      case 'store.ifixit.fr':
+         return 'FR';
+      case 'store.ifixit.it':
+         return 'IT';
+      case 'store.ifixit.co.uk':
+         return 'EN';
+      case 'eustore.ifixit.com':
+         return 'EN';
+      case 'eustore.ifixit.pro':
+         return 'EN';
+      case 'ifixit-dev.myshopify.com':
+         return 'EN';
+      case 'store.cominor.com':
+         return 'EN';
+      case 'ifixit-eu-test.myshopify.com':
+         return 'EN';
+      case 'ifixit-eu-pro-test.myshopify.com':
+         return 'EN';
+      default:
+         break;
+   }
+   if (
+      host.endsWith('.cominor.com') ||
+      host.endsWith('ifixit.vercel.app') ||
+      host === 'localhost'
+   ) {
+      return 'EN';
+   }
+   return null;
+}
