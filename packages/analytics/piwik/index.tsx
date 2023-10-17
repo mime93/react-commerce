@@ -29,11 +29,13 @@ export function trackPiwikPreferredStore(piwikEnv: string | undefined): void {
 }
 
 export function trackPiwikPreferredLanguage(
-   piwikEnv: string | undefined
+   piwikEnv: string | undefined,
+   preferredLang: string | null
 ): void {
    const customDimensions = getPiwikCustomDimensionsForEnv(piwikEnv);
    if (typeof window !== 'undefined' && customDimensions) {
-      const lang = getShopifyLanguageFromCurrentURL();
+      const lang =
+         preferredLang?.toUpperCase() ?? getShopifyLanguageFromCurrentURL();
       piwikPush([
          'setCustomDimension',
          customDimensions['preferredLanguage'],

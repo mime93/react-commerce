@@ -47,29 +47,7 @@ export function getShopifyLanguageFromCurrentURL(): string | null {
    switch (host) {
       case 'www.ifixit.com':
          return 'EN';
-      case 'australia.ifixit.com':
-         return 'EN';
-      case 'canada.ifixit.com':
-         return 'EN';
-      case 'store.ifixit.de':
-         return 'DE';
-      case 'store.ifixit.fr':
-         return 'FR';
-      case 'store.ifixit.it':
-         return 'IT';
-      case 'store.ifixit.co.uk':
-         return 'EN';
-      case 'eustore.ifixit.com':
-         return 'EN';
-      case 'eustore.ifixit.pro':
-         return 'EN';
-      case 'ifixit-dev.myshopify.com':
-         return 'EN';
       case 'store.cominor.com':
-         return 'EN';
-      case 'ifixit-eu-test.myshopify.com':
-         return 'EN';
-      case 'ifixit-eu-pro-test.myshopify.com':
          return 'EN';
       default:
          break;
