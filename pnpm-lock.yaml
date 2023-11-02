@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 patchedDependencies:
   react-lite-yt-embed@1.2.7:
     hash: govv7rvipvpuihepwlh66bbxfy
@@ -309,7 +305,7 @@ importers:
         specifier: 28.1.2
         version: 28.1.2(@types/node@18.11.5)
       jest-css-modules-transform:
-        specifier: ^4.4.2
+        specifier: 4.4.2
         version: 4.4.2
       jest-environment-jsdom:
         specifier: 28.1.2
@@ -321,7 +317,7 @@ importers:
         specifier: 0.49.2
         version: 0.49.2(typescript@5.2.2)
       next-plugin-bundle-stats:
-        specifier: ^4.1.11
+        specifier: 4.1.11
         version: 4.1.11(react-dom@18.2.0)(react@18.2.0)(webpack@5.73.0)
       playwright-msw:
         specifier: 2.1.0
@@ -367,7 +363,7 @@ importers:
         specifier: 18.2.7
         version: 18.2.7
       react:
-        specifier: '>=18.2.0'
+        specifier: 18.2.0
         version: 18.2.0
       typescript:
         specifier: 5.2.2
@@ -392,7 +388,7 @@ importers:
         version: 0.5.0
       next:
         specifier: '*'
-        version: 13.4.1(@babel/core@7.17.9)(react-dom@18.2.0)(react@18.2.0)
+        version: 13.4.1(react-dom@18.2.0)(react@18.2.0)
       zod:
         specifier: 3.22.4
         version: 3.22.4
@@ -429,7 +425,7 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/node':
-        specifier: '*'
+        specifier: 18.11.5
         version: 18.11.5
       '@types/prompts':
         specifier: 2.4.1
@@ -481,7 +477,7 @@ importers:
         specifier: 18.2.7
         version: 18.2.7
       framer-motion:
-        specifier: '>=4.0.0 <11.0.0'
+        specifier: 10.12.0
         version: 10.12.0(react-dom@18.2.0)(react@18.2.0)
       lodash:
         specifier: 4.17.21
@@ -560,13 +556,13 @@ importers:
         version: link:../tracking-hooks
     devDependencies:
       '@babel/core':
-        specifier: '>=7.0.0 <8.0.0'
+        specifier: 7.17.9
         version: 7.17.9
       '@emotion/react':
-        specifier: '>=11.0.0 <12.0.0'
+        specifier: 11.10.5
         version: 11.10.5(@babel/core@7.17.9)(@types/react@18.2.0)(react@18.2.0)
       '@emotion/styled':
-        specifier: '>=11.0.0 <12.0.0'
+        specifier: 11.10.5
         version: 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.2.0)(react@18.2.0)
       '@fortawesome/pro-solid-svg-icons':
         specifier: 6.4.0
@@ -581,22 +577,26 @@ importers:
         specifier: 18.2.7
         version: 18.2.7
       framer-motion:
-        specifier: '>=4.0.0 <11.0.0'
+        specifier: 10.12.0
         version: 10.12.0(react-dom@18.2.0)(react@18.2.0)
       react:
-        specifier: '>=18.2.0'
+        specifier: 18.2.0
         version: 18.2.0
       react-dom:
-        specifier: '>=18.2.0'
+        specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       regenerator-runtime:
-        specifier: '*'
+        specifier: 0.9.0
         version: 0.9.0
       typescript:
         specifier: 5.2.2
         version: 5.2.2
 
   packages/helpers:
+    dependencies:
+      next:
+        specifier: '*'
+        version: 0.1.0
     devDependencies:
       '@ifixit/tsconfig':
         specifier: workspace:*
@@ -618,13 +618,13 @@ importers:
         version: 0.2.0(@fortawesome/fontawesome-svg-core@6.4.0)(react@18.2.0)
     devDependencies:
       '@babel/core':
-        specifier: '>=7.0.0 <8.0.0'
+        specifier: 7.17.9
         version: 7.17.9
       '@emotion/react':
-        specifier: '>=11.0.0 <12.0.0'
+        specifier: 11.10.5
         version: 11.10.5(@babel/core@7.17.9)(@types/react@18.2.0)(react@18.2.0)
       '@emotion/styled':
-        specifier: '>=11.0.0 <12.0.0'
+        specifier: 11.10.5
         version: 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.2.0)(react@18.2.0)
       '@ifixit/tsconfig':
         specifier: workspace:*
@@ -636,13 +636,13 @@ importers:
         specifier: 18.2.7
         version: 18.2.7
       framer-motion:
-        specifier: '>=4.0.0 <11.0.0'
+        specifier: 10.12.0
         version: 10.12.0(react-dom@18.2.0)(react@18.2.0)
       react:
-        specifier: '>=18.2.0'
+        specifier: 18.2.0
         version: 18.2.0
       react-dom:
-        specifier: '>=18.2.0'
+        specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       typescript:
         specifier: 5.2.2
@@ -732,22 +732,22 @@ importers:
         version: link:../helpers
       '@sentry/nextjs':
         specifier: 7.74.0
-        version: 7.74.0(next@13.4.1)(react@18.2.0)
+        version: 7.74.0(next@13.4.12)(react@18.2.0)(webpack@5.73.0)
     devDependencies:
       '@babel/core':
-        specifier: '>=7.0.0 <8.0.0'
+        specifier: 7.17.9
         version: 7.17.9
       '@ifixit/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
       next:
-        specifier: ^10.0.8 || ^11.0 || ^12.0 || ^13.0
-        version: 13.4.1(@babel/core@7.17.9)(react-dom@18.2.0)(react@18.2.0)
+        specifier: 13.4.12
+        version: 13.4.12(@babel/core@7.17.9)(react-dom@18.2.0)(react@18.2.0)
       react:
-        specifier: '>=18.2.0'
+        specifier: 18.2.0
         version: 18.2.0
       react-dom:
-        specifier: '>=18.2.0'
+        specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       typescript:
         specifier: 5.2.2
@@ -819,13 +819,13 @@ importers:
         version: link:../newsletter-sdk
     devDependencies:
       '@babel/core':
-        specifier: '>=7.0.0 <8.0.0'
+        specifier: 7.17.9
         version: 7.17.9
       '@emotion/react':
-        specifier: ^11.10.5
+        specifier: 11.10.5
         version: 11.10.5(@babel/core@7.17.9)(@types/react@18.2.0)(react@18.2.0)
       '@emotion/styled':
-        specifier: '>=11.0.0 <12.0.0'
+        specifier: 11.10.5
         version: 11.10.5(@babel/core@7.17.9)(@emotion/react@11.10.5)(@types/react@18.2.0)(react@18.2.0)
       '@ifixit/tsconfig':
         specifier: workspace:*
@@ -837,7 +837,7 @@ importers:
         specifier: 18.2.7
         version: 18.2.7
       framer-motion:
-        specifier: '>=4.0.0 <11.0.0'
+        specifier: 10.12.0
         version: 10.12.0(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: 18.2.0
@@ -846,7 +846,7 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       regenerator-runtime:
-        specifier: '*'
+        specifier: 0.9.0
         version: 0.9.0
       typescript:
         specifier: 5.2.2
@@ -6745,10 +6745,10 @@ packages:
 
   /@next/env@13.4.1:
     resolution: {integrity: sha512-eD6WCBMFjLFooLM19SIhSkWBHtaFrZFfg2Cxnyl3vS3DAdFRfnx5TY2RxlkuKXdIRCC0ySbtK9JXXt8qLCqzZg==}
+    dev: false
 
   /@next/env@13.4.12:
     resolution: {integrity: sha512-RmHanbV21saP/6OEPBJ7yJMuys68cIf8OBBWd7+uj40LdpmswVAwe1uzeuFyUsd6SfeITWT3XnQfn6wULeKwDQ==}
-    dev: false
 
   /@next/eslint-plugin-next@13.4.1:
     resolution: {integrity: sha512-tVPS/2FKlA3ANCRCYZVT5jdbUKasBU8LG6bYqcNhyORDFTlDYa4cAWQJjZ7msIgLwMQIbL8CAsxrOL8maa/4Lg==}
@@ -6762,6 +6762,7 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
+    dev: false
     optional: true
 
   /@next/swc-darwin-arm64@13.4.12:
@@ -6770,7 +6771,6 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@next/swc-darwin-x64@13.4.1:
@@ -6779,6 +6779,7 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
+    dev: false
     optional: true
 
   /@next/swc-darwin-x64@13.4.12:
@@ -6787,7 +6788,6 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@next/swc-linux-arm64-gnu@13.4.1:
@@ -6796,6 +6796,7 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
+    dev: false
     optional: true
 
   /@next/swc-linux-arm64-gnu@13.4.12:
@@ -6804,7 +6805,6 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@next/swc-linux-arm64-musl@13.4.1:
@@ -6813,6 +6813,7 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
+    dev: false
     optional: true
 
   /@next/swc-linux-arm64-musl@13.4.12:
@@ -6821,7 +6822,6 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@next/swc-linux-x64-gnu@13.4.1:
@@ -6830,6 +6830,7 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
+    dev: false
     optional: true
 
   /@next/swc-linux-x64-gnu@13.4.12:
@@ -6838,7 +6839,6 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@next/swc-linux-x64-musl@13.4.1:
@@ -6847,6 +6847,7 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
+    dev: false
     optional: true
 
   /@next/swc-linux-x64-musl@13.4.12:
@@ -6855,7 +6856,6 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@next/swc-win32-arm64-msvc@13.4.1:
@@ -6864,6 +6864,7 @@ packages:
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
+    dev: false
     optional: true
 
   /@next/swc-win32-arm64-msvc@13.4.12:
@@ -6872,7 +6873,6 @@ packages:
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@next/swc-win32-ia32-msvc@13.4.1:
@@ -6881,6 +6881,7 @@ packages:
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
+    dev: false
     optional: true
 
   /@next/swc-win32-ia32-msvc@13.4.12:
@@ -6889,7 +6890,6 @@ packages:
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@next/swc-win32-x64-msvc@13.4.1:
@@ -6898,6 +6898,7 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
+    dev: false
     optional: true
 
   /@next/swc-win32-x64-msvc@13.4.12:
@@ -6906,7 +6907,6 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@nodelib/fs.scandir@2.1.5:
@@ -6961,7 +6961,7 @@ packages:
       '@oclif/parser': 3.8.11
       '@oclif/plugin-help': 3.2.1
       debug: 4.3.4
-      semver: 7.5.1
+      semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -7256,37 +7256,6 @@ packages:
       '@sentry/utils': 7.74.0
       localforage: 1.10.0
       tslib: 2.5.2
-    dev: false
-
-  /@sentry/nextjs@7.74.0(next@13.4.1)(react@18.2.0):
-    resolution: {integrity: sha512-ZxhlBKRV8To3NgNblJ+8RL1urDIzsdV9+8k9GZqNG5BFxLN2tJvbgHaxI7iV4E4qYpJAae379dWpvCzGWUXWkw==}
-    engines: {node: '>=8'}
-    peerDependencies:
-      next: ^10.0.8 || ^11.0 || ^12.0 || ^13.0
-      react: 16.x || 17.x || 18.x
-      webpack: '>= 4.0.0'
-    peerDependenciesMeta:
-      webpack:
-        optional: true
-    dependencies:
-      '@rollup/plugin-commonjs': 24.0.0(rollup@2.78.0)
-      '@sentry/core': 7.74.0
-      '@sentry/integrations': 7.74.0
-      '@sentry/node': 7.74.0
-      '@sentry/react': 7.74.0(react@18.2.0)
-      '@sentry/types': 7.74.0
-      '@sentry/utils': 7.74.0
-      '@sentry/vercel-edge': 7.74.0
-      '@sentry/webpack-plugin': 1.20.0
-      chalk: 3.0.0
-      next: 13.4.1(@babel/core@7.17.9)(react-dom@18.2.0)(react@18.2.0)
-      react: 18.2.0
-      rollup: 2.78.0
-      stacktrace-parser: 0.1.10
-      tslib: 2.5.2
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
     dev: false
 
   /@sentry/nextjs@7.74.0(next@13.4.12)(react@18.2.0)(webpack@5.73.0):
@@ -10361,6 +10330,11 @@ packages:
       is-symbol: 1.0.4
     dev: true
 
+  /es5-ext@0.5.1:
+    resolution: {integrity: sha512-7CMyIACzl/40Pay8a07xDN1ZbY2J5D91gyYL4Qqwv2mLNIwH2UcRmFJd5vYKTqvcDI8KXUDJhWbM6b3JqcyrMg==}
+    engines: {node: '>=0.1.103'}
+    dev: false
+
   /escalade@3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
     engines: {node: '>=6'}
@@ -10410,7 +10384,7 @@ packages:
       eslint: 7.23.0
       eslint-import-resolver-node: 0.3.7
       eslint-import-resolver-typescript: 3.5.5(@typescript-eslint/parser@5.48.1)(eslint-import-resolver-node@0.3.7)(eslint-plugin-import@2.27.5)(eslint@7.23.0)
-      eslint-plugin-import: 2.27.5(@typescript-eslint/parser@6.7.0)(eslint@7.23.0)
+      eslint-plugin-import: 2.27.5(@typescript-eslint/parser@5.48.1)(eslint-import-resolver-typescript@3.5.5)(eslint@7.23.0)
       eslint-plugin-jsx-a11y: 6.7.1(eslint@7.23.0)
       eslint-plugin-react: 7.32.2(eslint@7.23.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@7.23.0)
@@ -10450,7 +10424,7 @@ packages:
       enhanced-resolve: 5.14.1
       eslint: 7.23.0
       eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.48.1)(eslint-import-resolver-node@0.3.7)(eslint-import-resolver-typescript@3.5.5)(eslint@7.23.0)
-      eslint-plugin-import: 2.27.5(@typescript-eslint/parser@6.7.0)(eslint@7.23.0)
+      eslint-plugin-import: 2.27.5(@typescript-eslint/parser@5.48.1)(eslint-import-resolver-typescript@3.5.5)(eslint@7.23.0)
       get-tsconfig: 4.6.0
       globby: 13.1.4
       is-core-module: 2.12.1
@@ -10493,36 +10467,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-module-utils@2.8.0(@typescript-eslint/parser@6.7.0)(eslint-import-resolver-node@0.3.7)(eslint@7.23.0):
-    resolution: {integrity: sha512-aWajIYfsqCKRDgUfjEXNN/JlrzauMuSEy5sbd7WXbtW3EH6A6MpwEh42c7qD+MqQo9QMJ6fWLAeIJynx0g6OAw==}
-    engines: {node: '>=4'}
-    peerDependencies:
-      '@typescript-eslint/parser': '*'
-      eslint: '*'
-      eslint-import-resolver-node: '*'
-      eslint-import-resolver-typescript: '*'
-      eslint-import-resolver-webpack: '*'
-    peerDependenciesMeta:
-      '@typescript-eslint/parser':
-        optional: true
-      eslint:
-        optional: true
-      eslint-import-resolver-node:
-        optional: true
-      eslint-import-resolver-typescript:
-        optional: true
-      eslint-import-resolver-webpack:
-        optional: true
-    dependencies:
-      '@typescript-eslint/parser': 6.7.0(eslint@7.23.0)(typescript@5.2.2)
-      debug: 3.2.7
-      eslint: 7.23.0
-      eslint-import-resolver-node: 0.3.7
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /eslint-plugin-import@2.27.5(@typescript-eslint/parser@6.7.0)(eslint@7.23.0):
+  /eslint-plugin-import@2.27.5(@typescript-eslint/parser@5.48.1)(eslint-import-resolver-typescript@3.5.5)(eslint@7.23.0):
     resolution: {integrity: sha512-LmEt3GVofgiGuiE+ORpnvP+kAm3h6MLZJ4Q5HCyHADofsb4VzXFsRiWj3c0OFiV+3DWFh0qg3v9gcPlfc3zRow==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -10532,7 +10477,7 @@ packages:
       '@typescript-eslint/parser':
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 6.7.0(eslint@7.23.0)(typescript@5.2.2)
+      '@typescript-eslint/parser': 5.48.1(eslint@7.23.0)(typescript@5.2.2)
       array-includes: 3.1.6
       array.prototype.flat: 1.3.1
       array.prototype.flatmap: 1.3.1
@@ -10540,7 +10485,7 @@ packages:
       doctrine: 2.1.0
       eslint: 7.23.0
       eslint-import-resolver-node: 0.3.7
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@6.7.0)(eslint-import-resolver-node@0.3.7)(eslint@7.23.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.48.1)(eslint-import-resolver-node@0.3.7)(eslint-import-resolver-typescript@3.5.5)(eslint@7.23.0)
       has: 1.0.3
       is-core-module: 2.12.1
       is-glob: 4.0.3
@@ -13848,7 +13793,13 @@ packages:
       - webpack
     dev: true
 
-  /next@13.4.1(@babel/core@7.17.9)(react-dom@18.2.0)(react@18.2.0):
+  /next@0.1.0:
+    resolution: {integrity: sha512-DCFsa+Fz7TdYuZDmfu/Q747hbLWrWurKN4WOSezdALuZwEuUexzL4+m2FUxgbb84toIBUzm+yeXCy+UGG7UShA==}
+    dependencies:
+      es5-ext: 0.5.1
+    dev: false
+
+  /next@13.4.1(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-JBw2kAIyhKDpjhEWvNVoFeIzNp9xNxg8wrthDOtMctfn3EpqGCmW0FSviNyGgOSOSn6zDaX48pmvbdf6X2W9xA==}
     engines: {node: '>=16.8.0'}
     hasBin: true
@@ -13891,6 +13842,7 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
+    dev: false
 
   /next@13.4.12(@babel/core@7.17.9)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-eHfnru9x6NRmTMcjQp6Nz0J4XH9OubmzOa7CkWL+AUrUxpibub3vWwttjduu9No16dug1kq04hiUUpo7J3m3Xw==}
@@ -13933,7 +13885,6 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
-    dev: false
 
   /nextgen-events@1.5.3:
     resolution: {integrity: sha512-P6qw6kenNXP+J9XlKJNi/MNHUQ+Lx5K8FEcSfX7/w8KJdZan5+BB5MKzuNgL2RTjHG1Svg8SehfseVEp8zAqwA==}
@@ -17244,3 +17195,7 @@ packages:
   /zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
