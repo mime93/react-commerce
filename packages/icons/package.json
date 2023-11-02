@@ -9,7 +9,6 @@
       "build": "",
       "type-check": "tsc --pretty --noEmit"
    },
-   "dependencies": {},
    "peerDependencies": {
       "@chakra-ui/react": ">=2",
       "@emotion/react": ">=11.0.0 <12.0.0",
