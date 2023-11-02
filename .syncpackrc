@@ -1,0 +1,6 @@
+{
+  "dependencyTypes": ["!local", "!peer"],
+  "indent": "   ",
+  "semverRange": ""
+}
+
