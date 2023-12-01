@@ -4,6 +4,7 @@ import type { ScrewdriverBit } from '@models/components/screwdriver-bit';
 import { SectionDescription } from './SectionDescription';
 import { SectionHeaderWrapper } from './SectionHeaderWrapper';
 import { SectionHeading } from './SectionHeading';
+import { groupBy, mapValues, uniq } from 'lodash';
 
 export interface BitTableSectionProps {
    id: string;
@@ -24,7 +25,8 @@ export function BitTableSection({
    description,
    bits,
 }: BitTableSectionProps) {
-   const { groupedBits, driverSizeColors } = groupScrewdriverBits(bits);
+   const groupedBits = groupScrewdriverBits(bits);
+   const driverSizeColors = getDriverSizeColors(bits);
 
    return (
       <Box id={id} as="section" py="16" fontSize="sm">
@@ -186,54 +188,36 @@ function Bit({
    );
 }
 
-const groupScrewdriverBits = (
-   bits: ScrewdriverBit[]
-): {
-   groupedBits: GroupedBit[];
-   driverSizeColors: Record<string, string>;
-} => {
-   let colorIndex = 0;
-   const driverSizeColors: Record<string, string> = {};
-   const predefinedColors = ['amber', 'violet', 'green'];
-   const grouped: Record<string, GroupedBit> = {};
-
-   bits.forEach((bit) => {
-      const { type, size } = bit;
-
-      if (!driverSizeColors[type.driverSize]) {
-         driverSizeColors[type.driverSize] =
-            colorIndex < predefinedColors.length
-               ? predefinedColors[colorIndex++]
-               : 'brand';
-      }
-
-      let groupItem = grouped[type.name];
-
-      if (!groupItem) {
-         groupItem = {
-            type: {
-               id: type.id,
-               icon: type.icon,
-               name: type.name,
-            },
-            sizes: {},
-            totalBitCount: 0,
-         };
-
-         grouped[type.name] = groupItem;
-      }
-
-      if (!groupItem.sizes[type.driverSize]) {
-         groupItem.sizes[type.driverSize] = size ? [size] : [];
-         groupItem.totalBitCount = size ? 1 : 0;
-      } else if (size != null) {
-         groupItem.sizes[type.driverSize].push(size);
-         groupItem.totalBitCount++;
-      }
+const groupScrewdriverBits = (bits: ScrewdriverBit[]): GroupedBit[] => {
+   const groups = Object.values(groupBy(bits, (bit) => bit.type.name));
+   return groups.map((group) => {
+      const sizes: Record<string, string[]> = mapValues(
+         groupBy(group, (bit) => bit.type.driverSize),
+         (bits) => bits.map((bit) => bit.size).filter(isNotNull)
+      );
+      return {
+         type: {
+            id: group[0].type.id,
+            name: group[0].type.name,
+            icon: group[0].type.icon,
+         },
+         sizes,
+         totalBitCount: group.length,
+      };
    });
-
-   return {
-      groupedBits: Object.values(grouped),
-      driverSizeColors,
-   };
 };
+
+const predefinedColors = ['amber', 'violet', 'green'] as const;
+
+const getDriverSizeColors = (
+   bits: ScrewdriverBit[]
+): Record<string, typeof predefinedColors[number] | 'brand'> => {
+   const driverSizes = uniq(bits.map((bit) => bit.type.driverSize));
+   return Object.fromEntries(
+      driverSizes.map((size, i) => [size, predefinedColors[i] ?? 'brand'])
+   );
+};
+
+function isNotNull<T>(value: T | null): value is T {
+   return value !== null;
+}
