@@ -7,17 +7,24 @@ import { LayoutDataProvider } from './components/layout-data-provider';
 
 export default async function DefaultLayout({
    children,
+   stores,
 }: {
    children: ReactNode;
+   stores: ReactNode;
 }) {
    const layoutProps = await getLayoutServerSideProps({
       storeCode: DEFAULT_STORE_CODE,
    });
 
+   console.log('STORE SELECTOR PROPS', stores);
+
    return (
       <AppProviders>
          <LayoutDataProvider props={layoutProps}>
-            <IFixitPageFrame {...layoutProps}>{children}</IFixitPageFrame>
+            <IFixitPageFrame {...layoutProps}>
+               {stores}
+               {children}
+            </IFixitPageFrame>
          </LayoutDataProvider>
       </AppProviders>
    );
