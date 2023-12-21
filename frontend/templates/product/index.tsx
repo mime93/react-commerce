@@ -2,6 +2,7 @@ import { Box, Flex } from '@chakra-ui/react';
 import { PageEditMenu } from '@components/admin';
 import { PageBreadcrumb } from '@components/common';
 import { BannersSection } from '@components/sections/BannersSection';
+import { BitTableSection } from '@components/sections/BitTableSection';
 import { FAQsSection } from '@components/sections/FAQsSection';
 import { FeaturedProductsSection } from '@components/sections/FeaturedProductsSection';
 import { QuoteSection } from '@components/sections/QuoteSection';
@@ -10,37 +11,34 @@ import { ServiceValuePropositionSection } from '@components/sections/ServiceValu
 import { SplitWithImageContentSection } from '@components/sections/SplitWithImageSection';
 import { DEFAULT_STORE_CODE } from '@config/env';
 import { trackInAnalyticsViewItem } from '@ifixit/analytics';
+import { trackInPiwik } from '@ifixit/analytics/piwik/track-event';
 import { useAuthenticatedUser } from '@ifixit/auth-sdk';
 import {
    assertNever,
-   isLifetimeWarranty,
    getVariantIdFromVariantURI,
+   isLifetimeWarranty,
 } from '@ifixit/helpers';
-import { DefaultLayout } from '@layouts/default';
 import { ProductPreview } from '@models/components/product-preview';
+import type { Product } from '@pages/api/nextjs/cache/product';
 import { useInternationalBuyBox } from '@templates/product/hooks/useInternationalBuyBox';
 import * as React from 'react';
 import { LifetimeWarrantySection } from '../../components/sections/LifetimeWarrantySection';
+import { MetaTags } from './MetaTags';
 import { ProductPixelPing } from './components/PixelPing';
 import { SecondaryNavigation } from './components/SecondaryNavigation';
 import { useIsProductForSale } from './hooks/useIsProductForSale';
 import { useProductPageAdminLinks } from './hooks/useProductPageAdminLinks';
-import {
-   ProductTemplateProps,
-   useProductTemplateProps,
-} from './hooks/useProductTemplateProps';
 import { useSelectedVariant } from './hooks/useSelectedVariant';
-import { MetaTags } from './MetaTags';
 import { CompatibilityNotesSection } from './sections/CompatibilityNotesSection';
 import { CompatibilitySection } from './sections/CompatibilitySection';
 import { ProductOverviewSection } from './sections/ProductOverviewSection';
 import { ProductReviewsSection } from './sections/ProductReviewsSection';
-import { trackInPiwik } from '@ifixit/analytics/piwik/track-event';
-import { BitTableSection } from '@components/sections/BitTableSection';
 
-const ProductTemplate: NextPageWithLayout<ProductTemplateProps> = () => {
-   const { product } = useProductTemplateProps();
+interface ProductTemplateProps {
+   product: Product;
+}
 
+export function ProductTemplate({ product }: ProductTemplateProps) {
    const [selectedVariant, setSelectedVariantId] = useSelectedVariant(product);
 
    const internationalBuyBox = useInternationalBuyBox(product);
@@ -259,10 +257,4 @@ const ProductTemplate: NextPageWithLayout<ProductTemplateProps> = () => {
          )}
       </React.Fragment>
    );
-};
-
-ProductTemplate.getLayout = function getLayout(page, pageProps) {
-   return <DefaultLayout {...pageProps.layoutProps}>{page}</DefaultLayout>;
-};
-
-export default ProductTemplate;
+}

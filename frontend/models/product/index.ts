@@ -1,5 +1,6 @@
 import { filterFalsyItems } from '@helpers/application-helpers';
 import { parseItemcode } from '@ifixit/helpers';
+import { ProductDataApiResponse } from '@lib/ifixit-api/productData';
 import type { FindProductQuery as ShopifyFindProductQuery } from '@lib/shopify-storefront-sdk';
 import type { FindProductQuery as StrapiFindProductQuery } from '@lib/strapi-sdk';
 import {
@@ -8,6 +9,7 @@ import {
    breadcrumbsFromMetafield,
    isCurrentPageBreadcrumbMissing,
 } from '@models/components/breadcrumb';
+import { ImageAltFallback } from '@models/components/image';
 import { ProductPreviewSchema } from '@models/components/product-preview';
 import {
    productReviewsFromMetafields,
@@ -45,8 +47,6 @@ import {
    ProductVideosSchema,
 } from './components/product-video';
 import { getProductSections, ProductSectionSchema } from './sections';
-import { ProductDataApiResponse } from '@lib/ifixit-api/productData';
-import { ImageAltFallback } from '@models/components/image';
 
 export type {
    ProductVariant,
@@ -86,6 +86,13 @@ export const ProductSchema = z.object({
    vendor: z.string().nullable(),
    crossSellVariants: z.array(ProductPreviewSchema),
    sections: z.array(ProductSectionSchema),
+});
+
+export type ProductRedirect = z.infer<typeof ProductRedirectSchema>;
+
+export const ProductRedirectSchema = z.object({
+   __typename: z.literal('ProductRedirect'),
+   target: z.string(),
 });
 
 type ShopifyProduct = NonNullable<ShopifyFindProductQuery['product']>;
